@@ -29,7 +29,8 @@ func main() {
 	log.Print("Initialize..")
 	initialization(e)
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
+		response := "This is the good world"
+		return c.String(http.StatusOK, response)
 	})
 
 	// Start web server at port 3333
