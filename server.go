@@ -29,7 +29,7 @@ func main() {
 	log.Print("Initialize..")
 	initialization(e)
 	e.GET("/", func(c echo.Context) error {
-		response := "This is the good world"
+		response := "How are you, my friend "
 		return c.String(http.StatusOK, response)
 	})
 
